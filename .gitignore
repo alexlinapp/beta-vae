@@ -1,0 +1,27 @@
+*.gz
+*.html
+*.meta
+**/data
+**/datasets
+
+# runs
+**/runs
+
+# models
+*.pt
+
+
+
+# python
+**__pycache__
+temp.py
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# debug
+debug*
+
+# miscellaeous
+notes*
