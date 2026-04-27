@@ -59,31 +59,31 @@ By increasing the $D_{KL}$ weight with $\beta$ (hyperparameter), this creates a 
 ## Results
 
 #### Latent Traversal Comparison
-![z0](.\imgs\latent_traversal_z0.png)
+![z0](./imgs/latent_traversal_z0.png)
 
-![z1](.\imgs\latent_traversal_z1.png)
+![z1](./imgs/latent_traversal_z1.png)
 $\beta=4$-VAE Learned rotation (not completely disentangled with shape type)
 
 
 
-![z2](.\imgs\latent_traversal_z2.png)
+![z2](./imgs/latent_traversal_z2.png)
 $\beta=4$-VAE Learned rotation (not completely disentangled with shape type)
 
-![z3](.\imgs\latent_traversal_z3.png)
+![z3](./imgs/latent_traversal_z3.png)
 $\beta=4$-VAE latent dimension learned y position
 
-![z5](.\imgs\latent_traversal_z5.png)
+![z5](./imgs/latent_traversal_z5.png)
 $\beta=4$-VAE latent dimension learned x position
 
-![z6](.\imgs\latent_traversal_z6.png)
+![z6](./imgs/latent_traversal_z6.png)
 $\beta=4$-VAE latent dimension learned scale
 
 
 #### Graphs of Losses
-![train_summary](.\imgs\train_summary_grid.png)
+![train_summary](./imgs/train_summary_grid.png)
 
 #### Beta Annealing
-![train_beta](.\imgs\train_beta.png)
+![train_beta](./imgs/train_beta.png)
 
 ## Issues
 - Very very sensitive to training dynamics (batch size and some sizing issues between KL divergence and reconstruction loss)
