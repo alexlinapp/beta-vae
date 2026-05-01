@@ -51,6 +51,7 @@ By increasing the $D_{KL}$ weight with $\beta$ (hyperparameter), this creates a 
 ## Experiments
 - Original VAE: $\beta = 1$, no KL Annealing
     - Bad Scale: Sizing of reconstruction term takes average of pixels (64 x 64) rather than by image. Leads to higher emphasis of KL divergence, poor reconstruction
+    - However it does attempt to disentangle, although not well
 - Weighted 
 - Weighted VAE: $\beta = 4$
 - $\beta$ = 4 with linear KL annealing,
@@ -60,14 +61,16 @@ By increasing the $D_{KL}$ weight with $\beta$ (hyperparameter), this creates a 
 
 #### Latent Traversal Comparison
 ![z0](./imgs/latent_traversal_z0.png)
+$\beta=4$-VAE Example of ``redundant'' latent dimension which contains little to no infromation about generating factors. This makes sense as in the CW rotation we can see that shape type is disentangled with CW rotation (both of which are generative factors in the original dataset), so some latent dimensions must encode "less" information
+
 
 ![z1](./imgs/latent_traversal_z1.png)
-$\beta=4$-VAE Learned rotation (not completely disentangled with shape type)
+$\beta=4$-VAE Learned CCW rotation (not completely disentangled with shape type)
 
 
 
 ![z2](./imgs/latent_traversal_z2.png)
-$\beta=4$-VAE Learned rotation (not completely disentangled with shape type)
+$\beta=4$-VAE Learned CW rotation (not completely disentangled with shape type)
 
 ![z3](./imgs/latent_traversal_z3.png)
 $\beta=4$-VAE latent dimension learned y position
